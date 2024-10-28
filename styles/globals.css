@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    --primary-clr: #09031f;
+    --secondary-clr: #F71D25;
+    --white-clr: #ffffff;
+  }

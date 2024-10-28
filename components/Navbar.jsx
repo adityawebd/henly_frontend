@@ -112,13 +112,10 @@ export default function Nav() {
 
   return (
     <div className="fixed top-0 left-0 w-full bg-white z-50 border-b">
-      <div className="mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-        <div className="inline-flex items-center space-x-2 responsive_css_logo">
-          <Logo />
-        </div>
+      <div className="mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-8 ">
         {/* Mega menu for desktop */}
-        <div className="hidden grow items-start lg:flex">
-          <ul className="ml-12 inline-flex space-x-8 responsive_css_ul">
+        <div className="hidden grow items-start lg:flex ">
+          <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
               <li key={item.name} className="relative group">
                 <a
@@ -151,7 +148,7 @@ export default function Nav() {
             ))}
           </ul>
         </div>
-        <div className=" items-center space-x-2 hidden lg:block ">
+        <div className="items-center space-x-2 hidden lg:block mr-10">
           <Logo />
         </div>
         <div className="hidden lg:block ">

@@ -11,7 +11,8 @@ const productsData = [
     discountedPrice: "149.99",
     category: "Supernatural Protein",
     images: [
-      { url: "https://example.com/image1.jpg", altText: "Image 1" }
+      { url: "https://alpino.store/cdn/shop/files/2.2_1.jpg?v=1726908296&width=823", altText: "Image 1" },
+      { url: "https://alpino.store/cdn/shop/files/Chocolate_Oats_1kg_01_2.jpg?v=1727431628&width=823", altText: "Image 1" },
     ],
     sku: "PROD-001",
     stockQuantity: "50",
@@ -19,11 +20,11 @@ const productsData = [
   {
     title: "Aditya",
     description: "This is a detailed description of Sample Product 2.",
-    price: 249.99,
+    price: 209.99,
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
+      { url: "https://alpino.store/cdn/shop/files/Chocolate_Oats_1kg_01_2.jpg?v=1727431628&width=823", altText: "Image 1" },
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -35,7 +36,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -47,7 +47,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -59,7 +58,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -71,7 +69,7 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
+      
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -83,7 +81,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -95,7 +92,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -107,7 +103,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -119,7 +114,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -130,7 +124,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -142,7 +135,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -154,7 +146,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -166,7 +157,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -178,7 +168,17 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
+    ],
+    sku: "PROD-002",
+    stockQuantity: "30",
+  },
+  {
+    title: "New Product",
+    description: "This is a detailed description of Sample Product 2.",
+    price: 249.99,
+    discountedPrice: "199.99",
+    category: "Combos ",
+    images: [
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -190,7 +190,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -202,7 +201,6 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
@@ -214,11 +212,12 @@ const productsData = [
     discountedPrice: "199.99",
     category: "Aditya Raj Gupta",
     images: [
-      { url: "https://example.com/image2.jpg", altText: "Image 2" }
     ],
     sku: "PROD-002",
     stockQuantity: "30",
   },
+
+
   // Add more products for testing...
 ];
 
@@ -296,9 +295,10 @@ const CategoryPage = () => {
             {/* Product Fetching */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((product, index) => (
-                <ProductCard key={index} title={product.title} price={product.price} image={product.images[0]?.url} />
+                <ProductCard key={index} product={product} />
               ))}
             </div>
+                {/* <ProductCard key={index} title={product.title} price={product.price} image={product.images[0]?.url} /> */}
 
             {/* Pagination Controls */}
             <div className="flex justify-between mt-4">
