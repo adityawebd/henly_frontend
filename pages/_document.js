@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>English Buddy</title>
+        <title>Henly's </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       {/* <Head /> */}

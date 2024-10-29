@@ -2,9 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    --primary-clr: #09031f;
-    --secondary-clr: #F71D25;
-    --white-clr: #ffffff;
-  }
+  --primary-clr: #005d42;
+  --secondary-clr: #f71d25;
+  --white-clr: #ffffff;
+}
+
+.scollbarNone {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.scollbarNone::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.productPeanutBG {
+  /* border: 1px solid red; */
+  background-image: url('../public/assets/peanuts_bg.png');
+  /* background-color: #005d433e; */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 800px 200px;
+}
+.productPeanutListBG {
+  /* border: 1px solid red; */
+  background-image: url('../public/assets/peanuts_bg.png');
+  /* background-color: #005d433e; */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+
+.henlyhomebanner .swiper-button-prev {
+  /* left: -30px !important; */
+  top: 90% !important;
+  transition: all 1s;
+}
+.henlyhomebanner .swiper-button-next {
+  /* right: -30px !important; */
+  top: 90% !important;
+  transition: all 1s;
+}
+.henlyhomebanner .swiper-button-prev::after {
+  background-color: var(--white-clr);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 16px !important;
+  padding: 10px 14px !important;
+  /* left: !important; */
+  color: var(--primary-clr);
+  font-weight: 600;
+}
+.henlyhomebanner .swiper-button-next::after {
+  background-color: var(--white-clr);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 16px !important;
+  padding: 10px 14px !important;
+  color: var(--primary-clr);
+  font-weight: 600;
+}
+
+.henlyhomebanner:hover .swiper-button-prev {
+  top: 90% !important;
+  left: 46% !important;
+}
+
+.henlyhomebanner:hover .swiper-button-next {
+  top: 90% !important;
+  right: 46% !important;
+}

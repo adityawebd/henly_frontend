@@ -14,6 +14,7 @@ import {
   ShoppingBasket,
   BellRing,
   HandCoins,
+  Heart
 } from "lucide-react";
 import Image from "next/image";
 import { Ticket } from "lucide-react";
@@ -22,6 +23,7 @@ import { Ticket } from "lucide-react";
 const menuItems = [
   {
     name: "Shop Now",
+    href: "/shop/all",
     subMenu: [
       { name: "High Protein Peanut Butter", href: "#" },
       { name: "Supernatural Protein", href: "#" },
@@ -111,16 +113,17 @@ export default function Nav() {
   }, [isSearchOpen]);
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-white z-50 border-b">
-      <div className="mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-8 ">
+    <div className="fixed top-0 left-0 w-full bg-primary z-50 border-b">
+      <div className="mx-auto flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8 ">
         {/* Mega menu for desktop */}
-        <div className="hidden grow items-start lg:flex ">
+        {/* <div className="border w-full flex justify-between"> */}
+        <div className="hidden  items-start lg:flex ">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
               <li key={item.name} className="relative group">
                 <a
                   href={item.href}
-                  className="text-sm font-semibold text-gray-800 uppercase transition-all duration-500 hover:text-secondary hover:cursor-pointer"
+                  className="text-sm font-semibold text-white uppercase transition-all duration-500 hover:text-secondary hover:cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -148,45 +151,58 @@ export default function Nav() {
             ))}
           </ul>
         </div>
-        <div className="items-center space-x-2 hidden lg:block mr-10">
+        <div className="items-center space-x-2 hidden lg:block  ">
           <Logo />
         </div>
         <div className="hidden lg:block ">
           <div className="flex gap-4 items-center">
             <button
               onClick={toggleSearch}
-              className="text-primary transition-all duration-500 bg-primaryClr flex justify-center align-middle hover:text-secondary py-2 hover:bg-whiteClr hover:rounded-full hover:shadow-gray-900 hover:shadow-whiteClr"
+              className="text-white transition-all duration-500 flex justify-center align-middle hover:text-secondary py-2 hover:bg-whiteClr hover:rounded-full hover:shadow-gray-900 hover:shadow-whiteClr"
             >
               <Search />
             </button>
             <Link
+              href="#"
+              className="rounded-3xl flex justify-center items-center border-2 border-primary  bg-white text-primary p-2 text-xs uppercase font-semibold transition ease-in-out duration-500 hover:border-2 hover:border-primary hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              <Heart size={16} />
+            </Link>
+            <Link
+              href="#"
+              className="rounded-3xl flex justify-center items-center border-2 border-primary  bg-white text-primary p-2 text-xs uppercase font-semibold transition ease-in-out duration-500 hover:border-2 hover:border-primary hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              <BellRing size={16} />
+            </Link>
+            <Link
               href="/cart"
-              className="rounded-3xl flex justify-center items-center border-2 border-primary  bg-primary text-white p-2 text-xs uppercase font-semibold transition ease-in-out duration-500 hover:border-2 hover:border-primary hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="rounded-3xl flex justify-center items-center border-2 border-primary  bg-white text-primary p-2 text-xs uppercase font-semibold transition ease-in-out duration-500 hover:border-2 hover:border-primary hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               <ShoppingBasket size={16} />
             </Link>
             <Link
               href="/login"
-              className="rounded-3xl flex justify-center items-center border-2 border-primary  bg-primary text-white p-2 text-xs uppercase font-semibold transition ease-in-out duration-500 hover:border-2 hover:border-primary hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="rounded-3xl flex justify-center items-center border-2 border-primary  bg-white text-primary p-2 text-xs uppercase font-semibold transition ease-in-out duration-500 hover:border-2 hover:border-primary hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               <User size={16} />
             </Link>
           </div>
         </div>
+        {/* </div> */}
 
         <div className="lg:hidden flex items-center justify-between  gap-4 w-full">
           {/* <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer " /> */}
           <button
-              onClick={toggleSearch}
-              className=" text-primary transition-all duration-500 bg-white rounded-3xl p-2 flex justify-center items-center hover:text-primaryClr hover:bg-whiteClr hover:rounded-full hover:text-secondary"
-            >
-              <Search />
-            </button>
+            onClick={toggleSearch}
+            className=" text-primary transition-all duration-500 bg-white rounded-3xl p-2 flex justify-center items-center hover:text-primaryClr hover:bg-whiteClr hover:rounded-full hover:text-secondary"
+          >
+            <Search />
+          </button>
 
           <div className="inline-flex items-center space-x-2 ">
             <Logo />
           </div>
-          
+
           <div className=" flex gap-4 items-center">
             <Link
               href="#"
@@ -285,6 +301,8 @@ export default function Nav() {
           </div>
         )}
       </div>
+
+
 
       {/* Progress bar */}
       <div className="relative w-full h-[2px] bg-gray-200">

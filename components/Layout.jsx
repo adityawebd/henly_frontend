@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <>
       <div className="">
         <Navbar />
-        <div>
+        <div className="mt-16">
           {children}
         </div>
       </div>

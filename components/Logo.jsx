@@ -12,7 +12,8 @@ export default function Logo() {
           height={100}
           width={200}
         /> */}
-        <img src={'/assets/logo/logo_main.png'} alt='test' height="100px" width="100px"/> {/* For Development Server */}
+        {/* <img src={'/assets/logo/logo_main.png'} alt='test' height="100px" width="100px"/> For Development Server */}
+        <img src={'/assets/logo/logo_main_white.png'} alt='test' height="100px" width="100px"/> {/* For Development Server */}
       </span>
     </Link>
   );
