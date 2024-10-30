@@ -50,6 +50,7 @@ export const productsData = [
       tags: ["electronics", "gadgets", "new"],
       availability: "In Stock",
       shelfLife: "24 Months",
+      isBestSeller: 1
     },
     {
       title: "Combos 1",
@@ -62,16 +63,6 @@ export const productsData = [
       price: 199.99,
       discountedPrice: "149.99",
       images: [
-        {
-          url: "https://alpino.store/cdn/shop/files/Chocolate_Oats_1kg_01_2.jpg?v=1727431628&width=823",
-          altText: "Image 1",
-        },
-      ],
-      descriptionImages: [
-        {
-          url: "https://alpino.store/cdn/shop/files/2.2_1.jpg?v=1726908296&width=823",
-          altText: "Image 1",
-        },
         {
           url: "https://alpino.store/cdn/shop/files/Chocolate_Oats_1kg_01_2.jpg?v=1727431628&width=823",
           altText: "Image 1",
@@ -105,21 +96,10 @@ export const productsData = [
           date: "2024-08-18T14:30:00Z",
         },
       ],
-      relatedProducts: [
-        {
-          id: "prod-002",
-          title: "Related Product 1",
-          url: "https://example.com/related-product-1",
-        },
-        {
-          id: "prod-003",
-          title: "Related Product 2",
-          url: "https://example.com/related-product-2",
-        },
-      ],
       tags: ["electronics", "gadgets", "new"],
       availability: "In Stock",
       shelfLife: "24 Months",
+      isBestSeller: 1
     },
     {
       title: "Super Muesli 1",
@@ -132,16 +112,6 @@ export const productsData = [
       price: 199.99,
       discountedPrice: "149.99",
       images: [
-        {
-          url: "https://alpino.store/cdn/shop/files/2.2_1.jpg?v=1726908296&width=823",
-          altText: "Image 1",
-        },
-        {
-          url: "https://alpino.store/cdn/shop/files/Chocolate_Oats_1kg_01_2.jpg?v=1727431628&width=823",
-          altText: "Image 1",
-        },
-      ],
-      descriptionImages: [
         {
           url: "https://alpino.store/cdn/shop/files/2.2_1.jpg?v=1726908296&width=823",
           altText: "Image 1",
@@ -179,21 +149,10 @@ export const productsData = [
           date: "2024-08-18T14:30:00Z",
         },
       ],
-      relatedProducts: [
-        {
-          id: "prod-002",
-          title: "Related Product 1",
-          url: "https://example.com/related-product-1",
-        },
-        {
-          id: "prod-003",
-          title: "Related Product 2",
-          url: "https://example.com/related-product-2",
-        },
-      ],
       tags: ["electronics", "gadgets", "new"],
       availability: "In Stock",
       shelfLife: "24 Months",
+      isBestSeller: 1
     },
     {
       title: "Aditya Raj Gupta 1",
@@ -206,16 +165,6 @@ export const productsData = [
       price: 199.99,
       discountedPrice: "149.99",
       images: [],
-      descriptionImages: [
-        {
-          url: "https://alpino.store/cdn/shop/files/2.2_1.jpg?v=1726908296&width=823",
-          altText: "Image 1",
-        },
-        {
-          url: "https://alpino.store/cdn/shop/files/Chocolate_Oats_1kg_01_2.jpg?v=1727431628&width=823",
-          altText: "Image 1",
-        },
-      ],
       sku: "PROD-001",
       stockQuantity: "50",
       category: "Aditya Raj Gupta",
@@ -244,21 +193,10 @@ export const productsData = [
           date: "2024-08-18T14:30:00Z",
         },
       ],
-      relatedProducts: [
-        {
-          id: "prod-002",
-          title: "Related Product 1",
-          url: "https://example.com/related-product-1",
-        },
-        {
-          id: "prod-003",
-          title: "Related Product 2",
-          url: "https://example.com/related-product-2",
-        },
-      ],
       tags: ["electronics", "gadgets", "new"],
       availability: "In Stock",
       shelfLife: "24 Months",
+      isBestSeller: 1
     },
     // Add more products for testing...
   ];

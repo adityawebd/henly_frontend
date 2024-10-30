@@ -62,7 +62,7 @@ const ProductCard = React.memo(({ product }) => {
       </p>
 
       {/* Render Stars and Rating */}
-      <div className="flex items-center mt-2">
+      <div className="flex flex-wrap items-center mt-2">
         {renderStars(avgRating)}
         <span className="ml-2">
           {avgRating.toFixed(1)} / 5.0 ({totalReviews} reviews)
